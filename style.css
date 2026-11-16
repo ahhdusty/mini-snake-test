@@ -1,0 +1,24 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #173b31; background: #f7f7ed; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px 18px; }
+main { max-width: 480px; margin: auto; }
+header, .toolbar, .actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.eyebrow { font-size: 11px; letter-spacing: 2px; font-weight: 750; }
+.badge { font-size: 11px; border: 1px solid #a4b7a1; border-radius: 20px; padding: 6px 9px; }
+h1 { margin: 20px 0 0; font-size: clamp(48px, 12vw, 68px); letter-spacing: -4px; line-height: 1.1; }
+h1 span { color: #dc563f; }
+.intro { margin: 9px 0 24px; color: #516751; }
+.toolbar { margin-bottom: 12px; font-size: 14px; }
+#score { display: inline-block; margin-left: 8px; font-size: 22px; }
+canvas { display: block; width: 100%; aspect-ratio: 1; border: 2px solid #173b31; border-radius: 12px; background: #e7eddb; }
+.actions { margin-top: 16px; }
+button { font: inherit; font-weight: 650; cursor: pointer; border: 1px solid #173b31; border-radius: 9px; background: transparent; color: #173b31; padding: 12px 18px; min-height: 44px; touch-action: manipulation; }
+button:hover:enabled { background: #dce5ce; }
+button:focus-visible { outline: 3px solid #b44930; outline-offset: 3px; }
+button:disabled { opacity: .5; cursor: default; }
+#start { background: #173b31; color: white; flex: 1; }
+#start:hover { background: #285844; }
+.direction-pad { margin-top: 18px; text-align: center; }
+.direction-pad button { min-width: 54px; margin: 3px; font-size: 20px; padding: 8px; }
+.help { text-align: center; font-size: 12px; color: #516751; line-height: 1.8; }
+@media (max-width: 400px) { body { padding-top: 20px; } .badge { font-size: 10px; } }

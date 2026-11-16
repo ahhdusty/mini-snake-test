@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Змейка — маленькая пауза</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">МИНИ-АРКАДА / 01</span><span class="badge">Без зависимостей</span></header>
+    <h1>Змейка<span>.</span></h1>
+    <p class="intro">Маленькая пауза. Большой аппетит.</p>
+    <div class="toolbar"><strong>Счёт <span id="score">0</span></strong><span id="status" role="status" aria-live="polite">Готовы играть?</span></div>
+    <canvas id="board" width="480" height="480" role="img" aria-label="Игровое поле змейки, 16 на 16 клеток"></canvas>
+    <div class="actions"><button id="start">Начать игру</button><button id="pause" disabled>Пауза</button></div>
+    <div class="direction-pad" aria-label="Управление направлением">
+      <button data-direction="up" aria-label="Вверх">↑</button>
+      <div><button data-direction="left" aria-label="Влево">←</button><button data-direction="down" aria-label="Вниз">↓</button><button data-direction="right" aria-label="Вправо">→</button></div>
+    </div>
+    <p class="help">Стрелки или WASD · Пробел — пауза<br>Собирайте яблоки. Берегитесь стен и хвоста.</p>
+    <noscript>Для игры включите JavaScript в браузере.</noscript>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
